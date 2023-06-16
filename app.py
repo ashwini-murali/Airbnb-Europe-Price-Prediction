@@ -134,6 +134,6 @@ data = pd.DataFrame([data]).apply(pd.to_numeric,errors='coerce')
 prediction = xgb.predict(data)
 prediction = pri.inverse_transform([prediction])
 if st.button("Know your price"):
-    st.success(f"the price is {round(prediction[0,0],2)}")
+    st.success(f"The price is {round(prediction[0,0],2)}")
     
 #invers
